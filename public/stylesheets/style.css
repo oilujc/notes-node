@@ -3,6 +3,45 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.note {
+  position: relative;
+}
+
+.trash-btn-container {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  margin: 4px;
+}
+
+.card:hover .trash-btn-container {
+  opacity: 1;
+}
+
+.card-body.note-body-container {
+  height: 201px;
+  position: relative;
+}
+
+input.note-title {
+  background-color: #f7f7f7;
+  border: none;
+  text-align: center;
+}
+
+textarea.note-body {
+  height: 93%;
+  border: none;
+}
+
+.add-note {
+  right: -10px;
+  position: absolute;
+  bottom: -16px;
+  border-radius: 19px;
 }
